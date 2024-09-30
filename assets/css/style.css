@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
+body,
+html {
   background: #ffffff;
   color: #898989;
   font-family: "Poppins", helvetica;
@@ -13,6 +14,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 h1,
@@ -81,10 +83,12 @@ p {
   color: #693a3a !important;
   background: #ffcedc !important;
 }
+
 .btn:active {
   color: white !important;
   background: #e37292 !important;
 }
+
 .btn-outline {
   border: 1px solid #e37292;
   background: white;
@@ -108,6 +112,7 @@ p {
 .btn-outline:active {
   color: #693a3a !important;
 }
+
 .padDiv {
   padding: 30px 20px;
 }
@@ -285,7 +290,7 @@ p {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #ab4461;
 }
 
@@ -319,11 +324,11 @@ p {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #b8a07e;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -335,7 +340,7 @@ p {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -347,7 +352,7 @@ p {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
@@ -422,7 +427,7 @@ p {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #ab4461;
 }
 
@@ -457,11 +462,11 @@ p {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #b8a07e;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
@@ -547,11 +552,11 @@ p {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -769,10 +774,7 @@ p {
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -780,10 +782,7 @@ p {
   border: 1px solid #bb6b82;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #bb6b82;
 }
 
@@ -806,7 +805,7 @@ p {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -921,7 +920,7 @@ p {
   font-weight: 600;
 }
 
-.php-email-form .error-message br + br {
+.php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1161,6 +1160,7 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* Navbar */
   nav {
     padding: 10px 15px;
@@ -1243,6 +1243,7 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 767px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1325,6 +1326,7 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 600px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1407,6 +1409,7 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 480px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1488,6 +1491,7 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 320px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1570,20 +1574,25 @@ blockquote {
     margin-right: 0;
   }
 }
+
 .glightbox-clean .gslide-description {
   background: transparent !important;
 }
+
 .glightbox-clean .gslide-title {
   color: white;
 }
+
 section {
   padding: 60px 0;
 }
+
 .section-title {
   text-align: center;
   padding: 30px 0;
   position: relative;
 }
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -1594,6 +1603,7 @@ section {
   text-align: center;
   border: 1px solid #fff;
 }
+
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
@@ -1604,17 +1614,20 @@ section {
   height: 72px;
   background: #fff4df;
 }
+
 .services .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #82909c;
   position: relative;
 }
+
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -1626,6 +1639,7 @@ section {
   background: #fff;
   border: 2px solid #82909c;
 }
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -1633,6 +1647,7 @@ section {
   margin-bottom: 20px;
   color: #3b434a;
 }
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 16px;
@@ -1641,12 +1656,15 @@ section {
   color: #ab4461;
   margin-bottom: 10px;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 .swiper-wrapper {
   user-select: none;
 }
+
 .text-main {
   color: #ab4461;
 }
