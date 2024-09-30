@@ -237,13 +237,6 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
@@ -260,16 +253,30 @@
     }
   });
 
-  document.getElementById("education").style.display = "none";
+  // 隱藏 education 元素，如果存在的話
+  const educationElement = document.getElementById("education");
+  if (educationElement) {
+    educationElement.style.display = "none";
+  }
 
   function clickExperience() {
-    document.getElementById("experience").style.display = "block";
-    document.getElementById("education").style.display = "none";
+    const experienceElement = document.getElementById("experience");
+    if (experienceElement) {
+      experienceElement.style.display = "block";
+    }
+    if (educationElement) {
+      educationElement.style.display = "none";
+    }
   }
 
   function clickEducation() {
-    document.getElementById("experience").style.display = "none";
-    document.getElementById("education").style.display = "block";
+    const experienceElement = document.getElementById("experience");
+    if (experienceElement) {
+      experienceElement.style.display = "none";
+    }
+    if (educationElement) {
+      educationElement.style.display = "block";
+    }
   }
 
   window.clickExperience = clickExperience;
